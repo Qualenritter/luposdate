@@ -36,7 +36,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import lupos.datastructures.simplifiedfractaltree.FractalTreeEntry;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+import java.lang.UnsupportedOperationException;
 public class MemoryManager_NextFit<K extends Comparable<K> & Serializable, V extends Serializable> implements Serializable {
 	/**
 	 * Serial Version ID
@@ -239,7 +239,7 @@ public class MemoryManager_NextFit<K extends Comparable<K> & Serializable, V ext
 	 * @return a {@link java.util.ArrayList} object.
 	 */
 	public ArrayList<Triple> getAll() {
-		throw new NotImplementedException();
+		throw new UnsupportedOperationException();
 	}
 
 	/**

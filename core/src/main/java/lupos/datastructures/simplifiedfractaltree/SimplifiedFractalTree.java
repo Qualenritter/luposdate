@@ -42,7 +42,7 @@ import lupos.datastructures.simplifiedfractaltree.buffermanager.BufferedList_Lup
 import lupos.io.Registration;
 import lupos.io.Registration.DeSerializerConsideringSubClasses;
 import lupos.io.serializer.FRACTALTREEENTRY;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+import java.lang.UnsupportedOperationException;
 
 /**
  * This class is an implementation of the simplified fractaltree.
@@ -748,7 +748,7 @@ public class SimplifiedFractalTree<K extends Comparable<K> & Serializable, V ext
 
 		@Override
 		public void remove() {
-			throw new NotImplementedException();
+			throw new UnsupportedOperationException();
 		}
 	}
 
@@ -825,12 +825,12 @@ public class SimplifiedFractalTree<K extends Comparable<K> & Serializable, V ext
 
 		@Override
 		public Object[] toArray() {
-			throw new NotImplementedException();
+			throw new UnsupportedOperationException();
 		}
 
 		@Override
 		public <T> T[] toArray(final T[] a) {
-			throw new NotImplementedException();
+			throw new UnsupportedOperationException();
 		}
 
 		@Override
@@ -942,14 +942,14 @@ public class SimplifiedFractalTree<K extends Comparable<K> & Serializable, V ext
 		@Deprecated
 		@Override
 		public void remove() {
-			throw new NotImplementedException();
+			throw new UnsupportedOperationException();
 		}
 	}
 
 	/** {@inheritDoc} */
 	@Override
 	public SortedMap<K, V> headMap(final K toKey) {
-		throw new NotImplementedException();
+		throw new UnsupportedOperationException();
 	}
 
 	/** {@inheritDoc} */
@@ -1003,7 +1003,7 @@ public class SimplifiedFractalTree<K extends Comparable<K> & Serializable, V ext
 
 		@Override
 		public boolean add(final K key) {
-			throw new NotImplementedException();
+			throw new UnsupportedOperationException();
 		}
 
 		@Override
@@ -1020,17 +1020,17 @@ public class SimplifiedFractalTree<K extends Comparable<K> & Serializable, V ext
 
 		@Override
 		public boolean addAll(final Collection<? extends K> c) {
-			throw new NotImplementedException();
+			throw new UnsupportedOperationException();
 		}
 
 		@Override
 		public boolean retainAll(final Collection<?> c) {
-			throw new NotImplementedException();
+			throw new UnsupportedOperationException();
 		}
 
 		@Override
 		public boolean removeAll(final Collection<?> c) {
-			throw new NotImplementedException();
+			throw new UnsupportedOperationException();
 		}
 
 		@Override
@@ -1060,13 +1060,13 @@ public class SimplifiedFractalTree<K extends Comparable<K> & Serializable, V ext
 	/** {@inheritDoc} */
 	@Override
 	public SortedMap<K, V> subMap(final K fromKey, final K toKey) {
-		throw new NotImplementedException();
+		throw new UnsupportedOperationException();
 	}
 
 	/** {@inheritDoc} */
 	@Override
 	public SortedMap<K, V> tailMap(final K arg0) {
-		throw new NotImplementedException();
+		throw new UnsupportedOperationException();
 	}
 
 	/** {@inheritDoc} */

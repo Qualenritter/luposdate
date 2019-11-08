@@ -43,7 +43,7 @@ import java.util.RandomAccess;
 
 import lupos.datastructures.buffermanager.BufferManager;
 import lupos.datastructures.buffermanager.BufferManager.PageAddress;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+import java.lang.UnsupportedOperationException;
 
 /**
  * This class is a implementation of the <tt>List</tt> interface that stores the containing elements on the hard disk by using <tt>BufferManager</tt>
@@ -906,7 +906,7 @@ public class BufferedList<E> implements Collection<E>, List<E>, RandomAccess, Cl
 	/** {@inheritDoc} */
 	@Override
 	public <T> T[] toArray(final T[] a) {
-		throw new NotImplementedException();
+		throw new UnsupportedOperationException();
 	}
 
 	/** {@inheritDoc} */
